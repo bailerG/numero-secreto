@@ -4,12 +4,12 @@ function validaValorChute() {
     if(numeroForInvalido(numero)) {
         elementoChute.innerHTML += '<div>Este não é um número</div>';
         return
-    }
+    };
 
     if(limiteMáximoOuMinimoExcedido(numero)) {
         elementoChute.innerHTML += `<div>Valor inválido: O chute precisa estar entre ${menorValor} e ${maiorValor}</div>`;
         return
-    }
+    };
 
     if(numero === numeroSecreto) {
         document.body.innerHTML = `
@@ -42,4 +42,4 @@ document.body.addEventListener('click', e => {
     if(e.target.id == 'jogar-novamente') {
         window.location.reload()
     }
-})
+});
