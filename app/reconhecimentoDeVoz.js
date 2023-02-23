@@ -22,3 +22,4 @@ function exibeChute(chute) {
 }
 
 recognition.addEventListener('end', () => recognition.start());
+
